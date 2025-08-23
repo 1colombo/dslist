@@ -14,19 +14,19 @@ public class GameMinDTO {
   }
 
   public GameMinDTO(Game entity) {
-    this.id = entity.getId();
-    this.title = entity.getTitle();
-    this.year = entity.getYear();
-    this.imgUrl = entity.getImgUrl();
-    this.shortDescription = entity.getShortDescription();
+    id = entity.getId();
+    title = entity.getTitle();
+    year = entity.getYear();
+    imgUrl = entity.getImgUrl();
+    shortDescription = entity.getShortDescription();
   }
 
   public GameMinDTO(GameMinProjection projection) {
-    this.id = projection.getId();
-    this.title = projection.getTitle();
-    this.year = projection.getYear();
-    this.imgUrl = projection.getImgUrl();
-    this.shortDescription = projection.getShortDescription();
+    id = projection.getId();
+    title = projection.getTitle();
+    year = projection.getGameYear();
+    imgUrl = projection.getImgUrl();
+    shortDescription = projection.getShortDescription();
   }
 
   public Long getId() {
